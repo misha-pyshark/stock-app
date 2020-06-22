@@ -9,6 +9,8 @@ import yfinance as yf
 #Create a stock app class
 class Stockapp:
 
+    
+    
 
     def __init__(self, master=None):
 
@@ -39,6 +41,8 @@ class Stockapp:
         #Create an area to display the results of the search
         self.lowerLabel()
 
+        
+        
 
     def createCanvas(self):
 
@@ -51,6 +55,8 @@ class Stockapp:
         self.canvas=Canvas(self.master, height=200, width=400, bg='#0E8AEC')
         self.canvas.pack()
 
+        
+        
 
     def upperFrame(self):
 
@@ -64,6 +70,8 @@ class Stockapp:
         self.upper_frame=Frame(self.master, bg='#0E8AEC')
         self.upper_frame.place(relwidth=0.75, relheight=0.1, relx=0.5, rely=0.1, anchor='n')
 
+        
+        
 
     def entryLine(self):
         
@@ -77,6 +85,8 @@ class Stockapp:
         self.entryline.place(relwidth=0.65, relheight=1)
 
 
+        
+        
     def searchButton(self):
 
         '''
@@ -102,6 +112,8 @@ class Stockapp:
         self.lowerframe.place(relwidth=0.75, relheight=0.5, relx=0.5, rely=0.3, anchor='n')
 
 
+        
+        
     def lowerLabel(self):
 
         '''
@@ -113,6 +125,8 @@ class Stockapp:
         self.label=Label(self.lowerframe, bg='white')
         self.label.place(relwidth=1, relheight=1)
 
+        
+        
 
     def getStock(self, symbol):
 
